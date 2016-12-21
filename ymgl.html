@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- 注：从惠通服务_惠通商城开始到对外商务平台的rightMain都是错误的功能无法实现的。 -->
+	<title>我的账户_域名管理</title>
+	<link rel="stylesheet" href="css/myStyle.css">
+	<script type="text/javascript" src="js/myJs4.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="index_header">
+		<div class="index_logo"></div>
+		<div class="index_rightHeader">
+			<!-- //“退出”区域 -->
+			<div class="index_exitContainer">
+				<a href="#" class="index_rightHeaderLink" id="index_rightLink1">退出<div class="index_exit"></div></a>
+				<span id="index_rightSpan1"></span>
+			</div>
+			<!-- “服务支持区域” -->
+			<div  id="hoverServiceSupport">
+				<a href="#" class="index_rightHeaderLink" id="index_rightLink2">服务支持	
+				<div class="index_service" id="serviceImg"></div></a>
+				<div class="index_hiddenServiceSupport" id="hoverHiddenServiceSupport">
+					<div class="index_whiteBorder"></div>
+					<div class="index_hiddenServiceContent" ><img src="images/qq1.gif" alt=""><a href="#" >在线客服</a></div>
+					<div class="index_hiddenServiceContent" ><img src="images/help1.gif" alt=""><a href="#" >帮助中心</a></div>
+					<div class="index_hiddenServiceContent" ><img src="images/sineweibo1.gif" alt=""><a href="#" >新浪微博</a></div>
+				</div>
+				<span id="index_rightSpan2"></span>
+			</div>
+			<!-- "企业概括"区域 -->
+			<div id="hoverGeneralization">
+				<a href="#" class="index_rightHeaderLink" id="index_rightLink3">企业概括
+				<div class="index_generalization" id="generalizationImg"></div></a>
+				<div class="index_hiddenGeneralization" id="hoverHiddenGeneralization">
+					<!-- 横的白框 -->
+					<div class="index_whiteBorder"  id="index_whiteBorder"></div>
+					<!-- 竖的白框 -->
+					<div class="index_whiteBorder2"></div>
+					<div class="index_smallHiddenGeneralization">
+						<div class="index_hiddenGeneralizationFonts">云商账号：bufuquanzhang</div>
+						<div class="index_hiddenGeneralizationFonts">企业名称：bufuquanzhang</div>
+						<div class="index_hiddenGeneralizationFonts">员工总数：1个<a href="#">[管理员工]</a></div>
+
+					</div>
+				</div>
+				<span id="index_rightSpan3"></span>
+			</div>
+			<div class="index_hello">骆金锋,晚上好！</div>
+		</div>
+	</div>
+	<div class="index_main">
+		<!-- 订正之后的答案,功能：自适应右侧内容。 -->
+		<div class="dingdan_rightMain">
+		<!-- 第一步：得到一个width height 100%的DIV，由于左侧菜单fixed属性影响,将marginleft设置为-195px以覆盖网页全部区域 -->
+			<div class="dingdan_rightLM">
+			<!-- 第二步,得到一个float:none并且marginleft为195px，让之后的内容都处于右侧 -->
+				<div class="dingdan_rightContainer">
+				<!-- 第三步,设置padding 0 20px 左右缩进20px； -->
+					<div class="dingdan_rightMainLM">
+					<!-- 第四步,设置paddingtop 80px 让内容处于头部的下侧不被覆盖 -->
+					<!-- html作为网页搭建结构的元素，直接影响之后的所有内容。熟练之后Html结构应该越来越简单。但是这里分四个DIV设置，能使他们之间的属性不相互影响，猜测是为了便于调整。 -->
+						<div class="gwc_content">
+							<table class="gwc_table">
+								<tbody class="gwc_tbody">
+									<tr>
+										<td>域名</td>
+										<td class="gwc_centerText">备案状态</td>
+										<td class="gwc_centerText">状态</td>
+										<td class="gwc_centerText">操作</td>
+									</tr>
+									<tr>
+										<td class="gwc_noborder">www.dhfgf.com</td>
+										<td class="gwc_centerText gwc_noborder">20160315</td>
+										<td class="gwc_centerText gwc_noborder">正常</td>
+									<td class="gwc_centerText gwc_noborder"><a href="#" class="ymgl_mainLink">删除</a></td>
+									</tr>
+									<tr>
+										<td class="gwc_noborder">www.dhfgf.com</td>
+										<td class="gwc_centerText gwc_noborder">20160315</td>
+										<td class="gwc_centerText gwc_noborder">正常</td>
+										<td class="gwc_centerText gwc_noborder"><a href="#" class="ymgl_mainLink">删除</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div class="index_leftMain">
+			<a href="index.html" class="index_nav index_hoverNav" id="hoverNav1"><img class="navImg" id="navImg1" src="images/icon_01.png" alt=""><span id="hoverSpan1">对外商务平台</span></a>
+			<a href="qygl.html" class="index_nav index_hoverNav" id="hoverNav2"><img class="navImg" id="navImg2" src="images/icon_03.png" alt=""><span id="hoverSpan2">对内企业管理</span></a>
+			<div class="index_nav index_hoverNav " id="hoverNav3"><img class="navImg" id="navImg3" src="images/icon_05.png" alt=""><span id="hoverSpan3">惠通服务</span>
+			<div class="index_clickBox">
+			<ul>
+				<a href="htfw.html" ><li class="index_hiddenLink"><span>·&nbsp;&nbsp;惠通商城</span></li></a>
+				<a href="gwc.html" ><li class="index_hiddenLink" ><span>·&nbsp;&nbsp;购物车</span></li></a>
+				<a href="dingdan.html"><li class="index_hiddenLink"><span>·&nbsp;&nbsp;我的订单</span></li></a>
+			</ul>
+				
+			</div>
+			</div>
+			<div class="index_nav index_hoverNav navModify" id="hoverNav4"><img class="navImg" id="navImg4" src="images/icon_06.png" alt=""><span id="hoverSpan4">我的账户</span>
+				<div class="index_clickBox">
+			<ul>
+				<a href="ygcp.html" ><li class="index_hiddenLink"  ><span>·&nbsp;&nbsp;已购产品</span></li></a>
+				<a href="" ><li class="index_hiddenLink" id="clickSpan"><span>·&nbsp;&nbsp;域名管理</span></li></a>
+			</ul>
+				
+			</div>
+
+			</div>
+			<div class="index_leftFooter">&nbsp;COPYRIGHTS © <span class="index_white">2016 </span><br />
+				DESIGNBY <span class="index_white">HUITONG</span></div>
+		</div>
+
+</body>
+</html>
